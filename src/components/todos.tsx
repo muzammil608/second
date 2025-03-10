@@ -8,6 +8,8 @@ const Todos = () => {
     const [searchParams] = useSearchParams();
     let todos̥Data = searchParams.get("todos");
     console.log("🚀 ~ file: todos.tsx:10 ~ Todos ~ todos̥Data:", todos̥Data)
+    console.log("Data pushed");
+    
 
 
     let filterData = todos;
