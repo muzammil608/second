@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;700;900&family=Urbanist:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 10rem;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+main h2 {
+    font-size: 3rem;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 4.8rem;
+    text-align: center;
+}
+
+main h2 .icons {
+    color: #68B984;
+}
+
+/* Navbar */
+nav {
+    max-width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid #ccc;
+    padding-bottom: 1rem;
+}
+
+nav a {
+    font-size: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #ccc;
+    border-bottom: 0.3rem solid transparent;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    border-color: #3A3845;
+}
+
+nav a.active {
+    color: #000;
+    border-color: #68B984;
+}
+
+/* Form */
+form {
+    width: 100%;
+    max-width: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    border: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.06rem;
+    font-weight: bold;
+}
+
+form button {
+    padding: 0.8rem 2.8rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: #68B984;
+    color: #fff;
+    width: 100%;
+    max-width: 20rem;
+}
+
+label {
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+    color: #3A3845;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Task List */
+.main-task {
+    width: 100%;
+    max-width: 50rem;
+}
+
+.main-task li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 0.1rem solid #ccc;
+}
+
+.main-task li:first-child {
+    border-top: 0.1rem solid #ccc;
+}
+
+.main-task li:hover {
+    background-color: #fef2f2;
+}
+
+.main-task li input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+    color: #D14D72;
+}
+
+.main-task li button {
+    padding: 0.6rem 1rem;
+    background-color: #D14D72;
+    color: #FFF9F9;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    .main-task {
+        max-width: 90%;
+    }
+}
