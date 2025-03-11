@@ -145,6 +145,19 @@ label {
     letter-spacing: 0.1rem;
 }
 
+.footer {
+
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     html {

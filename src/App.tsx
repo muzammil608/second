@@ -7,7 +7,7 @@ import Todos from "./components/todos"
 const App = () => {
   return (
    <main>
-      <h1>TODO REACT</h1>
+      <h1>TaskMaster</h1>
       <Navbar />
       <AddToDo />
       <Todos />
