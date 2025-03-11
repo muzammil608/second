@@ -182,4 +182,8 @@ label {
     .main-task {
         max-width: 90%;
     }
+
+    .footer {
+        font-size: 15px;
+    }
 }
