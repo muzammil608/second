@@ -1,5 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;700;900&family=Urbanist:wght@300;600&display=swap');
 
+/* Default Light Mode */
+:root {
+    --bg-color: #fff;
+    --text-color: #000;
+    --nav-color: #ccc;
+    --primary-color: #68B984;
+    --button-bg: #68B984;
+    --button-text: #fff;
+    --task-hover: #fef2f2;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --bg-color: grey;
+    --text-color: #fff;
+    --nav-color: #555;
+    --primary-color: #D14D72;
+    --button-bg: #D14D72;
+    --button-text: #FFF9F9;
+    --task-hover: #3A3845;
+}
+
+/* Apply Colors */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav a {
+    color: var(--nav-color);
+}
+
+nav a.active {
+    color: var(--text-color);
+    border-color: var(--primary-color);
+}
+
+form button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
+
+.main-task li:hover {
+    background-color: var(--task-hover);
+}
+.footer {
+    background-color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
