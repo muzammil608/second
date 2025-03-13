@@ -13,7 +13,7 @@
 
 /* Dark Mode */
 [data-theme="dark"] {
-    --bg-color: grey;
+    --bg-color: black;
     --text-color: #fff;
     --nav-color: #555;
     --primary-color: #D14D72;
@@ -45,6 +45,7 @@ form button {
 .main-task li:hover {
     background-color: var(--task-hover);
 }
+
 .footer {
     background-color: white;
 }
